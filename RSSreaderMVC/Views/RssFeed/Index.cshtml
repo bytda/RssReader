@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<br />
+<h2>RSS Feed Reader</h2>
+<hr />
+<br />
+@using (Html.BeginForm())
+{
+    <input type="URL" name="RSSURL" placeholder="Enter RSS Feed URL Here..." class="form-control" value="@ViewBag.URL" style="min-width:100%" />
+
+    <br />
+
+    <input type="submit" class="btn btn-danger" />
+
+}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th width="250">Заголовок</th>
+            <th width="150">Время публикации</th>
+            <th >Описание</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.RSSFeed != null)
+        {
+            foreach (var item in ViewBag.RSSFeed)
+            {
+        <tr>
+            <td><a href="@item.Link">@item.Title</a></td>
+            <td>@item.PubDate</td>
+            <td>@item.Description</td>
+
+        </tr>
+
+            }
+        }
+    </tbody>
+</table> 

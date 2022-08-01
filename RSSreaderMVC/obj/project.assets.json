@@ -1,0 +1,115 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "System.ServiceModel.Syndication/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.ServiceModel.Syndication.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Syndication.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.ServiceModel.Syndication/6.0.0": {
+      "sha512": "cp1mMNG87iJtE0oHXFtfWT6cfski2JNo5iU0siTPi/uN2k1CIJI6FE4jr4v3got2dzt7wBq17fSy44btun9GiA==",
+      "type": "package",
+      "path": "system.servicemodel.syndication/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.ServiceModel.Syndication.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.ServiceModel.Syndication.dll",
+        "lib/net461/System.ServiceModel.Syndication.xml",
+        "lib/net6.0/System.ServiceModel.Syndication.dll",
+        "lib/net6.0/System.ServiceModel.Syndication.xml",
+        "lib/netcoreapp3.1/System.ServiceModel.Syndication.dll",
+        "lib/netcoreapp3.1/System.ServiceModel.Syndication.xml",
+        "lib/netstandard2.0/System.ServiceModel.Syndication.dll",
+        "lib/netstandard2.0/System.ServiceModel.Syndication.xml",
+        "system.servicemodel.syndication.6.0.0.nupkg.sha512",
+        "system.servicemodel.syndication.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "System.ServiceModel.Syndication >= 6.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/alina/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/alina/Desktop/RSSreaderMVC/RSSreaderMVC/RSSreaderMVC.csproj",
+      "projectName": "RSSreaderMVC",
+      "projectPath": "/Users/alina/Desktop/RSSreaderMVC/RSSreaderMVC/RSSreaderMVC.csproj",
+      "packagesPath": "/Users/alina/.nuget/packages/",
+      "outputPath": "/Users/alina/Desktop/RSSreaderMVC/RSSreaderMVC/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/alina/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "System.ServiceModel.Syndication": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
